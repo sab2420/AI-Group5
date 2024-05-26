@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import google.generativeai as palm
+import os
 from flask import url_for
 
 flag = 1

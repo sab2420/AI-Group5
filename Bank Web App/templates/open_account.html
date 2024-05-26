@@ -1,0 +1,51 @@
+<style>
+    .container {width: 100%;margin: auto;}
+        @media (min-width: 600px) {.container {width: 80%;}}
+        @media (min-width: 768px) {.container {width: 60%;}}
+        @media (min-width: 1024px) {.container {width: 50%;}}
+    </style>
+        
+    
+    <div class="container">
+
+<h1>Opening an account with AI Bank is easy.</h1>
+
+<h2>Please tell us more about yourself.</h2>
+    <form>
+        <label for="options">Is this a personal or corporate account?</label>
+        <select id="options" name="options">
+            <option value="option1">Select an option</option>
+            <option value="option2">Personal</option>
+            <option value="option3">Coporate</option>
+        </select>
+    </form>
+
+    <form>
+        <label for="options">Please select the type of bank account you wish to open.</label>
+        <select id="options" name="options">
+            <option value="option1">Select an option</option>
+            <option value="option2">Savings account</option>
+            <option value="option3">Fixed Deposit account</option>
+        </select>
+    </form>
+
+    <form action="/main" method="post">
+        <label for="text">Please input your national identity number:</label>
+        <input type="text" name="q">
+    </form>
+
+    <form action="/thank_you" method="post">
+        <label for="Agree">Please allow us to extract your details from Singpass.</label>
+        <input type="submit" value="Agree">
+    </form>
+
+<form action="/main" method="post">
+    <p><input type="submit" value="Main"></p>
+</form>
+
+<form action="/end" method="post">
+    <p><input type="submit" value="End"></p>
+</form>
+    </div>
+
+
